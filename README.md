@@ -4,7 +4,7 @@ Proyecto final CoderHouse:
 
 -------Funcionalidades de la página, según sus diferentes templates:
 
-Home: Si no se ha logueado, recibirá un mensaje invitandolo a loguearse. En caso de estar logueado, se le mostrará un formulario para crear su propio blog.
+Home: Si no se ha logueado, recibirá un mensaje invitandolo a loguearse. En caso de estar logueado, se le mostrará un formulario para crear su propio blog. En el campo de autor debe introducirse ,respetando las mayúsculas, el nombre de usuario.
 
 Blogs: Mostrará una lista con los blog creados, indicando su titulo, subtitulo, foto y autor. Cada uno poseera la etiqueta 'leer más' que lo llevará a la página del blog. Si es propietario del mismo, también podrá ver las etiquetas de 'editar' y 'borrar'.
 
