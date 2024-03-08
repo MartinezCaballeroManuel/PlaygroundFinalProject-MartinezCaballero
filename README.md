@@ -4,6 +4,10 @@ Por el momento no me está dejando subir mi proyecto a github. De no poder hacer
 
 VIDEO: https://youtu.be/vFBP4_osRgo
 
+Administrador: 
+user: admin 
+password: 1234
+
 Proyecto final CoderHouse:
 
 -------Funcionalidades de la página, según sus diferentes templates:
