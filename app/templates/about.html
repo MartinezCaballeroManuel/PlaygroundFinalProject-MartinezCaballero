@@ -1,0 +1,66 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block header %}
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{% static "assets/img/about-bg.webp" %}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About Me</h1>
+                            <span class="subheading">Hola! soy Manu, gracias por visitar mi blog.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+{% endblock %}
+
+{% block formulario %}
+
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div align="center">
+                            <img  src={% static "assets/img/me.jpg" %} alt="..." height="200px" />
+                        </div>
+                        <p>Que tal, me llamo Manuel, soy de Bs As, Argentina.</p>
+                        <p>Realicé los 2 primeros años de la carrera ingenieria en sistemas en la UTN. Actualmente estoy cursando la carrera ciencias de la computación en la UBA. Y finalice el curso de python orientado al desarrollo WEB. Siempre me atrajo el sector IT, más precisamente la programación.</p>
+                        <p>Tengo conocimiento sobre los siguientes lenguajes de programación/tecnológias:
+                            <li>
+                                C++
+                            </li>
+                            <li>
+                                HTML5
+                            </li>
+                            <li>
+                                CSS
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                Django
+                            </li>
+                            <li>
+                                Bootstrap
+                            </li>
+                        </p>
+                        <p>En cuanto a mi proyecto, realicé un blog, donde cada aficionado pueda registrarse y compartir sus experiencias/conocimientos con otras personas apasionadas por la F1, como lo soy yo, desde que practicamente tengo uso de razón.
+                        </p>
+                        <p>
+                            Hice uso del Framework Django, que mediante el uso de Python, más un poco de Bootstrap, pude estructurar mi blog, haciendolo funcional y agradable a los ojos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+{% endblock %}
+        

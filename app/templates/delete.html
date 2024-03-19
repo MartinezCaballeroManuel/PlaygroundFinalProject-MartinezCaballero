@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block formulario %}
+<h1>Borrar Blog</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    Estas seguro que deseas borrar el blog {{blog.titulo}} ?
+    <input type="submit" value="Eliminar">
+</form>
+
+
+{% endblock %}

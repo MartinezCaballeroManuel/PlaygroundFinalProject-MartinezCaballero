@@ -1,0 +1,29 @@
+{% extends 'index.html'%}
+
+{% block title %}
+<title>Registro</title>
+{% endblock %}
+
+{% block formulario %}
+
+<h1>Registro</h1>
+
+{% if mensaje %}
+<h2>{{mensaje}}</h2>
+<p>
+    <button>
+        <a href={% url 'login' %}>Iniciar sesión</a>
+    </button>
+</p>
+
+{% else %}
+
+<form action="" method="POST">
+        {% csrf_token %}
+            {{ form.as_p }}
+        <button type="submit">Registrarse</button>
+</form>
+
+{% endif %}
+
+{% endblock %}

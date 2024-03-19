@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block formulario %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Editar">
+</form>
+
+<p>
+    <a href={% url 'pages' %}>Regresar</a>
+</p>
+
+
+{% endblock %}

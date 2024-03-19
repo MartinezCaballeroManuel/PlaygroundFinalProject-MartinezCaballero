@@ -1,0 +1,28 @@
+{% extends 'index.html'%}
+
+{% block title %}
+<title>Login</title>
+{% endblock %}
+
+{% block formulario %}
+
+<h1>Login</h1>
+
+{% if mensaje %}
+<h3>{{mensaje}}</h3>
+
+<p>
+    <button>
+        <a href={% url 'index' %}>Crea tu primer blog!</a>
+    </button>
+</p>
+{% else %}
+
+<form action="" method="POST">
+        {% csrf_token %}
+            {{ form.as_p }}
+        <button type="submit">Iniciar sesión</button>
+</form>
+{% endif %}
+
+{% endblock %}

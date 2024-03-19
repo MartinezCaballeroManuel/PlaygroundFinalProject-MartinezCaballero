@@ -1,0 +1,43 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block header %}
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{% static "assets/img/post-bg.png " %}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="post-heading">
+                    <h1>{{blog.titulo}}</h1>
+                    <h2 class="subheading">{{blog.subtitulo}}</h2>
+                    <span class="meta">
+                        Posted by {{blog.autor}}, {{blog.fecha}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock %}
+
+{% block formulario %}
+
+<!-- Post Content-->
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>{{blog.cuerpo}}</p>
+                <img class="img-fluid" src="{{blog.imagen.url}}" alt="" height="50px">
+                <p>
+                    <a href={% url 'pages' %}>Regresar</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+
+{% endblock %}
